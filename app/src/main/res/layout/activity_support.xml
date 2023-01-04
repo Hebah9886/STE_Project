@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Support">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Please spcify the support time"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/UrgentSupport"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="Urgant"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+
+            />
+
+        <RadioButton
+            android:id="@+id/NormalSupport"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="Normal"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    </RadioGroup>
+
+
+    <Spinner
+        android:id="@+id/supportsSpinner"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:spinnerMode="dropdown"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="276dp"/>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:text="Please enter supports's id"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/SupportId"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Enter support id"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:text="Please enter your address"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Supportaddress"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Enter address"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/errorMsgSupport"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/red"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/SubmitbtnSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="554dp" />
+
+    <Button
+        android:id="@+id/ClearbtnSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Clear"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="554dp" />
+
+    <Button
+        android:id="@+id/DeletebtnSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Delete"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="554dp" />
+
+
+    <Button
+        android:id="@+id/UpdateSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Update"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="554dp" />
+
+    <Button
+        android:id="@+id/ReadSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Read"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="554dp" />
+    <Button
+        android:id="@+id/CloseSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Close"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="554dp" />
+
+</TableLayout>
